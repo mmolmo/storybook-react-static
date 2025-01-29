@@ -11,7 +11,9 @@ export default function Footer() {
       `
     }}>
       <h2>{footerTitle}</h2>
-      <p>Aesop’s fables are known for having a clear moral, and the fable of the hare and the tortoise is no exception. Indeed, the moral of this tale has become proverbial: slow and steady wins the race.</p>
+      <article>
+        <p>Aesop’s fables are known for having a clear moral, and the fable of the hare and the tortoise is no exception. Indeed, the moral of this tale has become proverbial: slow and steady wins the race.</p>
+      </article>
     </footer>   
   )
 }

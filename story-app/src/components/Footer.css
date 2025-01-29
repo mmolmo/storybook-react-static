@@ -5,17 +5,26 @@
   padding: var(--spacing-large);
   color: var(--secondary-color);
   margin-top: auto;
-  /*
-  background-image: linear-gradient(-45deg, 
-    rgba(44, 74, 59, 0.97), 
-    rgba(44, 74, 59, 0.95)),
-    repeating-linear-gradient(-45deg, 
-      transparent, 
-      transparent 10px, 
-      rgba(255, 255, 255, 0.05) 10px, 
-      rgba(255, 255, 255, 0.05) 20px);*/
   box-shadow: var(--shadow-small);
   border-top: 4px solid rgba(255, 255, 255, 0.1);
+}
+
+footer article {
+  margin-bottom: var(--spacing-large);
+  font-size: var(--font-size-base);
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-large);
+  
+  position: relative;
+  padding: 0.5rem 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+article p:first-letter {
+  color: var(--secondary-color);
 }
 
 .App-footer h2:first-of-type {
