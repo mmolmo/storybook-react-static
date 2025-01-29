@@ -23,7 +23,7 @@ footer article {
   animation: fadeIn 0.5s ease-out forwards;
 }
 
-article p:first-letter {
+footer article p:first-letter {
   color: var(--secondary-color);
 }
 
