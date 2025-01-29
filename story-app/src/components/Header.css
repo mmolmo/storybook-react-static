@@ -1,23 +1,11 @@
 @import 'global.css';
-/*@import '../assets/images/treeheader.jpg';*/
-/* Header styles */
-
+/*Exclusive styles for footer*/
 .App-header {
-  /*background-color: var(--primary-color);*/
   padding: var(--spacing-large);
   color: var(--secondary-color);
   box-shadow: var(--shadow-small);
   background-size: cover;
   background-position: center;
-  /*background-image: linear-gradient(
-    linear-gradient(-45deg,
-    rgba(44, 74, 59, 0.97),
-    rgba(44, 74, 59, 0.95)),
-    repeating-linear-gradient(-45deg,
-      transparent,
-      transparent 10px,
-      rgba(255, 255, 255, 0.05) 10px,
-      rgba(255, 255, 255, 0.05) 20px));*/
   border-bottom: 4px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -51,11 +39,10 @@ nav {
   overflow: hidden;
 }
 
+/*Animations*/
 .App-link:hover {
   border-bottom: 2px solid var(--secondary-color);
 }
-
-
 
 .App-link::after {
   content: "";

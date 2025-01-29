@@ -1,5 +1,6 @@
 @import 'global.css';
 
+/*Exclusive styles for footer component*/
 .App-footer {
   background-color: var(--primary-color);
   padding: var(--spacing-large);
@@ -9,12 +10,14 @@
   border-top: 4px solid rgba(255, 255, 255, 0.1);
 }
 
-footer article {
+.App-footer article {
   margin-bottom: var(--spacing-large);
   font-size: var(--font-size-base);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: var(--spacing-large);
+  font-family: 'Crimson Text', Georgia, serif;
   
   position: relative;
   padding: 0.5rem 2rem;
@@ -23,14 +26,24 @@ footer article {
   animation: fadeIn 0.5s ease-out forwards;
 }
 
-footer article p:first-letter {
+.App-footer article p:first-letter {
   color: var(--secondary-color);
 }
+
+.App-footer article p {
+  font-family: 'Crimson Text', Georgia, serif;
+}
+
 
 .App-footer h2:first-of-type {
   font-size: var(--font-size-large);
   margin-bottom: var(--spacing-medium);
   font-family: var(--font-decorative);
+}
+
+.articleSynopsis {
+  font-family: 'Crimson Text', Georgia, serif;
+  max-width: var(--content-width);
 }
 
 .App-footer p:last-of-type {
