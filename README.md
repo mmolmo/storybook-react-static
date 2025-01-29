@@ -2,7 +2,7 @@
 
 This project displays a simple, static webpage of an Aesop's Fable using Create React app.
 
-2. Features
+# Features
 
 - Displays a classic Aesop's Fable to a React webpage on localhost:3000
 - Uses React components for modular design
