@@ -1,0 +1,23 @@
+@import './components/global.css';
+
+.App {
+  text-align: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  font-family: var(--font-primary);
+  background-color: var(--secondary-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--secondary-color);
+}

@@ -1,0 +1,32 @@
+@import 'global.css';
+
+.App-footer {
+  background-color: var(--primary-color);
+  padding: var(--spacing-large);
+  color: var(--secondary-color);
+  margin-top: auto;
+  /*
+  background-image: linear-gradient(-45deg, 
+    rgba(44, 74, 59, 0.97), 
+    rgba(44, 74, 59, 0.95)),
+    repeating-linear-gradient(-45deg, 
+      transparent, 
+      transparent 10px, 
+      rgba(255, 255, 255, 0.05) 10px, 
+      rgba(255, 255, 255, 0.05) 20px);*/
+  box-shadow: var(--shadow-small);
+  border-top: 4px solid rgba(255, 255, 255, 0.1);
+}
+
+.App-footer h2:first-of-type {
+  font-size: var(--font-size-large);
+  margin-bottom: var(--spacing-medium);
+  font-family: var(--font-decorative);
+}
+
+.App-footer p:last-of-type {
+  font-style: italic;
+  line-height: 1.6;
+  max-width: var(--content-width);
+  margin: 0 auto;
+}

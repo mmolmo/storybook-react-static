@@ -1,0 +1,97 @@
+/* Content styles */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+@import 'global.css';
+
+.App-body {
+  padding: var(--spacing-xlarge) var(--spacing-large);
+  line-height: 1.6;
+  color: var(--text-primary);
+  flex-grow: 1;
+
+  position: relative;
+  background-color: #fff;
+  margin: 2rem;
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: var(--paper-shadow);
+  /* Create decorative corners */
+  border: var(--border-decorative);
+  animation: fadeIn 0.8s ease-out;
+}
+
+.App-body h2:first-of-type {
+  font-size: var(--font-size-large);
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-large);
+  font-style: italic;
+}
+
+.articleIntro{
+  font-family: 'Crimson Text', Georgia, serif;
+}
+
+article {
+  max-width: var(--content-width);
+  margin: 0 auto;
+  text-align: left;
+}
+
+article p {
+  margin-bottom: var(--spacing-large);
+  font-size: var(--font-size-base);
+
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+article p:first-letter {
+  font-size: calc(var(--font-size-base) * 2);
+  font-weight: bold;
+  color: var(--primary-color);
+  padding: 0.1em 0.1em 0 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.App-body::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  right: -6px;
+  bottom: -6px;
+  border: 2px solid #2c4a3b;
+  border-radius: 12px;
+  z-index: -1;
+}
+
+/* Add to Content.css */
+.App-body p:first-of-type::before {
+  content: '"';
+  font-size: 4rem;
+  color: var(--primary-color);
+  opacity: 0.3;
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+}
+
+.App-body p:first-of-type::after {
+  content: '"';
+  font-size: 4rem;
+  color: var(--primary-color);
+  opacity: 0.3;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+/* Add decorative section divider */
+article::after {
+  content: "❦";  /* or "✤" or "❧" */
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-color);
+  opacity: 0.5;
+  margin: 2rem 0;
+}
